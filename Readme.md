@@ -16,4 +16,5 @@ https://fontawesome.com/
 
 Note:
 
-We created this project for learning purposes. If you want to use this theme on your website. Then you need to mention our GitHub and Our Facebook Page link as a reference.
+We created this project for learning purposes.
+Not for Business.

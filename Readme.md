@@ -1,12 +1,12 @@
-Title: 'Login Registration Page UI Design With HTML5, CSS3 & jQuery'
+Title: "Login Registration Page UI Design With HTML5, CSS3 & jQuery"
 
-Creator: 'MD Imam Hossain'
+Creator: "MD Imam Hossain"
 
 Date: 23 November 2019
 
-Github: 'https://github.com/imamhossain0049'
+Github: https://github.com/imamhossain0049
 
-Facebook: 'https://www.facebook.com/Errors-Coder-110159353757421/'
+Facebook: https://www.facebook.com/Errors-Coder-110159353757421/
 
 Reference:
 

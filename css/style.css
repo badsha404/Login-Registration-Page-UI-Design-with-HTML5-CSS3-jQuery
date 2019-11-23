@@ -1,0 +1,224 @@
+/*
+* Title: 'Login Registration Page UI Design With HTML5, CSS3 & jQuery'
+* Creator: 'MD Imam Hossain'
+* Date: 23 November 2019
+* Github: 'https://github.com/imamhossain0049'
+* Facebook: 'https://www.facebook.com/Errors-Coder-110159353757421/'
+* Reference
+  https://jquery.com/
+  https://fontawesome.com/
+*/
+
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap&subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese');
+
+
+html,
+body {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #F0F3F5;
+}
+
+
+/* Login Ragistration Wrapper Design */
+.x-login-registration-wrapper {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.x-login-registration-container {
+  display: block;
+  position: relative;
+  background: #fff;
+  width: 400px;
+  height: 350px;
+  padding: 16px 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 25px rgba(0,0,0, 0.05);
+}
+
+
+/* Heading Style */
+.x-login-registration-heading {
+  display: block;
+  font-size: 22px;
+  color: #1A2157;
+  margin-bottom: 20px;
+  text-align: center;
+  margin-left: -2.5rem;
+}
+
+
+/* Login Registration Switcher Design */
+.login-registration-switcher {
+  display: block;
+  position: absolute;
+  text-decoration: none;
+  font-size: 14px;
+  background-color: #6461FF;
+  color: #fff;
+  width: 382px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  left: 230px;
+  top: 50%;
+  transform: translate(0, -50%) rotate(90deg);
+  z-index: 1000;
+  transition: .3s;
+}
+.login-registration-switcher.active {
+  transition: .3s;
+  left: -171px;
+}
+
+
+
+/* Input Design */
+.x-login-registration-container input {
+  display: block;
+  width: calc(100% - 75px);
+  padding: 12px 16px;
+  margin-bottom: 1.25rem;
+  border: 1px solid #D6DCE1;
+  color: #656B9C;
+}
+.x-login-registration-container input:focus {
+  border-color: #858CFF;
+  outline: 0;
+  color: #656B9C;
+}
+.x-login-registration-container input::placeholder {
+  color: #B3B9CD;
+}
+
+
+/* Submit Button */
+.x-login-registration-button {
+  display: block;
+  width: calc(100% - 41px);
+  border: 0;
+  background: #6461FF;
+  color: #fff;
+  padding: 10px;
+  margin-bottom: 1.25rem;
+  cursor: pointer;
+  box-shadow: 0px 2px 6px rgba(86, 83, 255, .4);
+}
+.x-login-registration-button:hover,
+.x-login-registration-button:focus {
+  outline: 0
+}
+
+.x-login-registration-button:active {
+  box-shadow: none;
+}
+
+
+
+/* Forget Link */
+.x-forget-password-link {
+  display: inline-block;
+  text-decoration: none;
+  color: #6E79A8;
+  font-size: 14px;
+  margin-bottom: 1.25rem;
+}
+
+.x-contact-us-link {
+  display: inline-block;
+  text-decoration: none;
+  float: right;
+  margin-right: 42px;
+  color: #6E79A8;
+  font-size: 14px;
+  margin-bottom: 1.25rem;
+}
+
+.x-forget-password-link:hover,
+.x-contact-us-link:hover {
+  color: #495588;
+}
+
+
+
+/* Login Side Design */
+.x-login-side {
+  display: inline-block;
+  position: absolute;
+  width: 400px;
+  left: -420px;
+  transition: .3s;
+}
+.x-login-side.show {
+  left: 20px;
+  transition: .3s;
+}
+/* Registration Side Design */
+.x-registration-side {
+  display: inline-block;
+  position: absolute;
+  width: 400px;
+  left: calc(100% + 20px);
+  transition: .3s;
+}
+
+.x-registration-side.show {
+  left: 60px;
+  transition: .3s;
+}
+
+
+/* Social Media Design */
+.x-social-media {
+  display: block;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-left: -2rem;
+  margin-top: .5rem;
+  text-align: center;
+}
+.x-social-media li {
+  display: inline-block;
+  margin: 3px;
+}
+.x-social-media li a {
+  display: block;
+  padding: 8px 12px;
+  font-size: 28px;
+}
+.x-social-media .x-facebook {
+  color: #3b5998;
+}
+.x-social-media .x-twitter {
+  color: #00acee ;
+}
+.x-social-media .x-youtube {
+  color: #E81D1D ;
+}
+.x-social-media .x-google {
+  color: #F2432E;
+}
+
+
+
+/* Responsive */
+@media screen and (max-width: 576px){
+  .x-login-registration-container {
+    width: 280px;
+  }
+  .login-registration-switcher {
+    left: 109px;
+  }
+  .x-login-side {
+    width: 280px;
+  }
+  .x-registration-side {
+    width: 280px;
+  }
+}
